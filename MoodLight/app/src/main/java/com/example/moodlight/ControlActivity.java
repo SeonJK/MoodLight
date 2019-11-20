@@ -39,28 +39,28 @@ public class ControlActivity extends AppCompatActivity {
         red.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-                data = "255 0 0 255 )";
+                data = "255 0 0 )";
                 mThreadConnectedBluetooth.write(data);
             }
         });
         orange.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-                data = "255 50 0 255 )";
+                data = "255 50 0 )";
                 mThreadConnectedBluetooth.write(data);
             }
         });
         green.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-                data = "0 255 0 255 )";
+                data = "0 255 0 )";
                 mThreadConnectedBluetooth.write(data);
             }
         });
         blue.setOnClickListener(new Button.OnClickListener(){
             @Override
             public void onClick(View v) {
-                data = "0 0 255 255 )";
+                data = "0 0 255 )";
                 mThreadConnectedBluetooth.write(data);
             }
         });
@@ -84,7 +84,7 @@ public class ControlActivity extends AppCompatActivity {
             stringBuilder.append(value);
             stringBuilder.append(" ");
         }
-        stringBuilder.append("255)");
+        stringBuilder.append(")");
         return stringBuilder.toString();
     }
 
